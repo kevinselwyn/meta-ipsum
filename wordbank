@@ -1,0 +1,25 @@
+#!/bin/bash
+
+if [ "$1" == "" ]
+then
+	input=""
+else
+	input=`cat $1 | sed 's/[^a-zA-Z]/ /g'`
+fi
+
+output=""
+
+for i in $input
+do
+	if [ ${#i} -gt 1 ]
+	then
+		i=`echo $i | awk '{print tolower($0)}'`
+
+		if [[ $output != *"$i"* ]]
+		then
+			output="$output $i"
+		fi
+	fi
+done
+
+echo $output

@@ -1,14 +1,14 @@
-#meta-ipsum
+# meta-ipsum
 
 Lorem Ipsum generator with a self-referential dictionary
 
-##Installation
+## Installation
 
 ```bash
 make && sudo make install
 ```
 
-##Usage
+## Usage
 
 ```
 Usage: meta-ipsum [-w,--word (<count>)]
@@ -17,7 +17,7 @@ Usage: meta-ipsum [-w,--word (<count>)]
                   [-h]
 ```
 
-##Explanation
+## Explanation
 
 Lorem Ipsum is random, nonsensical placeholder text used by designers to show text in designs in a way that it is not distracting, or if the actual text has not been provided yet.
 
@@ -29,9 +29,9 @@ For example:
 #include <stdio.h>
 
 int main() {
-	printf("Hello, World!\n");
+    printf("Hello, World!\n");
 
-	return 0;
+    return 0;
 }
 ```
 
